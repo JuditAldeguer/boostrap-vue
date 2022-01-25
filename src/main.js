@@ -1,3 +1,5 @@
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import "./styles/app.css";
