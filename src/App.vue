@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="bg-info clearfix">
+      <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+      <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
 
@@ -23,6 +22,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 60px 0 ;
+  background-color: var(--body-color);
 }
+
+/* .float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+} */
 </style>
